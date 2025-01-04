@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    height: 5%;
+}
+
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    margin-right: 2rem;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.navbar-links a {
+    text-decoration: none;
+}
+
+.navbar-links a:visited {
+    color: black;
+}
+
+.navbar-links a:hover {
+    color: orange;
+}
