@@ -23,5 +23,5 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-          az storage blob delete-batch --berberapanstorage --auth-mode key --account-key ${{ secrets.AZURE_STORAGE_KEY }} --source '$web'
-          az storage blob upload-batch --berberapanstorage --auth-mode key --account-key ${{ secrets.AZURE_STORAGE_KEY }} --source ./dist --destination '$web'
+          az storage blob delete-batch --account-name berberapanstorage --auth-mode key --account-key ${{ secrets.AZURE_STORAGE_KEY }} --source '$web'
+          az storage blob upload-batch --account-name berberapanstorage --auth-mode key --account-key ${{ secrets.AZURE_STORAGE_KEY }} --source ./dist --destination '$web'
