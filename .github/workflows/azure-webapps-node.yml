@@ -1,0 +1,27 @@
+name: Deploy Frontend
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Setup Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'
+        
+    - name: Install and Build
+      run: |
+        npm install
+        npm run build
+        
+    - name: Upload to Blob Storage
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+          az storage blob delete-batch --account-name your-storage-account --auth-mode key --account-key ${{ secrets.AZURE_STORAGE_KEY }} --source '$web'
+          az storage blob upload-batch --account-name your-storage-account --auth-mode key --account-key ${{ secrets.AZURE_STORAGE_KEY }} --source ./dist --destination '$web'
