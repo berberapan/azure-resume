@@ -19,7 +19,7 @@ const ResumeItem = ({ title, children }) => (
 );
 
 const Resume = () => (
-  <div className="cv">
+  <div className="cv" id="cv">
     <div className="resume">
       <ResumeSection title="Certifikat">
         <ResumeItem>

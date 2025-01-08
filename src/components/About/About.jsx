@@ -31,7 +31,7 @@ const About = () => {
 
     return (
 
-        <div className="about">
+        <div className="about" id="about">
             <h2>Om</h2>
             <p>
             Jag har jobbat som trader inom spelindustrin i många år och håller nu på att

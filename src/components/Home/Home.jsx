@@ -19,7 +19,7 @@ const Home = () => {
 
     return (
 
-        <div className="home">
+        <div className="home" id="home">
             <div className="box-wrapper">
                 <div className="name">
                     <span>Josef <span className="color-change"><span>B</span><span>o</span><span>u</span><span>k</span><span>d</span><span>i</span><span>r</span></span></span>

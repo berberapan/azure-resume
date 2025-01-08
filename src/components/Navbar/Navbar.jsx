@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className="navbar-right">
         <ul className="navbar-links">
             <li>
-                <a href="#">Hem</a>
+                <a href="#home">Hem</a>
             </li>
             |
             <li>
@@ -16,7 +16,7 @@ const Navbar = () => {
             </li>
             |
             <li>
-                <a href="#resume">CV</a>
+                <a href="#cv">CV</a>
             </li>
         </ul>
     </div>
