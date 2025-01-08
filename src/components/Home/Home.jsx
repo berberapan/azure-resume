@@ -22,7 +22,7 @@ const Home = () => {
         <div className="home">
             <div className="box-wrapper">
                 <div className="name">
-                    <span>Josef Boukdir</span>
+                    <span>Josef <span className="color-change"><span>B</span><span>o</span><span>u</span><span>k</span><span>d</span><span>i</span><span>r</span></span></span>
                 </div>
                 <div className="home-contacts">
                     <span 

@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    background-color: #f0f0f0;
 }
 
 .box-wrapper {
@@ -36,3 +37,46 @@
     cursor: pointer;
     min-width: max-content;
 }
+
+.color-change {
+    color: black;
+}
+
+.color-change span:nth-child(even) {
+    animation: evenLetters 80s ease-in-out infinite;
+}
+
+.color-change span:nth-child(odd) {
+    animation: oddLetters 80s ease-in-out infinite;
+}
+
+@keyframes evenLetters {
+    0% { color: black; }
+    75% { color: black; }
+    80% { color: #001f3f; }
+    90% { color: #001f3f; }
+    95% { color: black; }
+    100% { color: black; }
+}
+
+@keyframes oddLetters {
+    0% { color: black; }
+    75% { color: black; }
+    80% { color: #7fdbff; }
+    90% { color: #7fdbff; }
+    95% { color: black; }
+    100% { color: black; }
+}
+
+.home-contacts a {
+    text-decoration: none;
+}
+
+.home-contacts a:visited {
+    color: black;
+}
+
+.home-contacts a:hover {
+    color: orange;
+}
+

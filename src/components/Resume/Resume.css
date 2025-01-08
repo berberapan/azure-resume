@@ -1,0 +1,50 @@
+.resume {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 24px 48px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .row {
+    display: contents;
+  }
+  
+  .left {
+    text-align: left;
+  }
+  
+  .right {
+    padding-left: 10px;
+  }
+  
+  .section-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 2px solid #d5d2e4;
+    display: inline-block;
+    padding-bottom: 2px;
+  }
+  
+  .content-item {
+    margin-bottom: 24px;
+  }
+  
+  .content-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 4px;
+  }
+  
+  .content-item p {
+    color: #4b5563;
+    font-style: italic;
+  }
+  
+  .cv {
+    padding: 40px 20px;
+  }
+  
