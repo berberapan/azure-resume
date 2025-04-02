@@ -1,52 +1,67 @@
 import React from "react";
 import "./Resume.css";
 
-const ResumeSection = ({ title, children }) => (
-  <>
-    <div className="row">
-      <div className="left section-title">{title}</div>
-      <div className="right"></div>
+const SectionColumn = ({ title, children }) => (
+    <div className="section-column">
+      <h2 className="section-title">{title}</h2>
+      <div className="section-items">{children}</div>
     </div>
-    {children}
-  </>
 );
 
 const ResumeItem = ({ title, children }) => (
-  <div className="row">
-    <div className="left">{title}</div>
-    <div className="right">{children}</div>
+  <div className="content-item">
+    <h3>{title}</h3>
+    {children}
   </div>
 );
 
 const Resume = () => (
   <div className="cv" id="cv">
     <div className="resume">
-      <ResumeSection title="Certifikat">
-        <ResumeItem>
-          <div className="content-item">
-            <h3>Azure Fundamentals AZ-900</h3>
+
+      <SectionColumn title="Arbetslivserfarenhet">
+        <ResumeItem title="bet365">
+            <p>Esports Trader • Gibraltar & Distans</p>
+            <p>April 2018 - Present</p>
+        </ResumeItem>
+        <ResumeItem title="Digital Engine (Praktik)">
+            <p>Systemutvecklare • Stockholm</p>
+            <p>Oktober 2024 - April 2025</p>
+        </ResumeItem>
+        <ResumeItem title="bet365">
+            <p>Senior Trading Assistant • Gibraltar</p>
+            <p>Maj 2017 - Februari 2018</p>
+        </ResumeItem>
+        <ResumeItem title="bet365">
+            <p>Trading Assistant • Gibraltar</p>
+            <p>Juli 2016 - April 2017</p>
+        </ResumeItem>
+        <ResumeItem title="bet365">
+            <p>Customer Advisor • Stoke-on-Trent</p>
+            <p>Mars 2013 - Juli 2016</p>
+        </ResumeItem>
+      </SectionColumn>    
+
+      <SectionColumn title="Studier">
+        <ResumeItem title="Nackademin">
+            <p>Javautvecklare • Distans</p>
+            <p>Augusti 2022 - Present</p>
+        </ResumeItem>
+        <ResumeItem title="Linköpings universitet">
+            <p>Civilekonomprogrammet • Linköping</p>
+            <p>September 2009 - December 2012</p>
+        </ResumeItem>
+      </SectionColumn>
+
+    <SectionColumn title="Certifikat">
+        <ResumeItem title="Azure Fundamentals AZ-900">
             <p>December 2024</p>
-          </div>
         </ResumeItem>
-      </ResumeSection>
+        <ResumeItem title="Cisco CCNA 1 Networking">
+            <p>April 2006</p>
+        </ResumeItem>
+      </SectionColumn>
 
-      <ResumeSection title="Arbetslivserfarenhet">
-        <ResumeItem>
-          <div className="content-item">
-            <h3>bet365</h3>
-            <p>Esports Trader • April 2018 - Present</p>
-          </div>
-        </ResumeItem>
-      </ResumeSection>
-
-      <ResumeSection title="Studier">
-        <ResumeItem>
-          <div className="content-item">
-            <h3>Nackademin</h3>
-            <p>Javautvecklare • Augusti 2022 - Present</p>
-          </div>
-        </ResumeItem>
-      </ResumeSection>
     </div>
   </div>
 );

@@ -5,7 +5,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: #f0f0f0;
+    background-color: #171923;
+    color: #E2E8F0;
 }
 
 .box-wrapper {
@@ -39,7 +40,7 @@
 }
 
 .color-change {
-    color: black;
+    color: #E2E8F0;
 }
 
 .color-change span:nth-child(even) {
@@ -51,30 +52,30 @@
 }
 
 @keyframes evenLetters {
-    0% { color: black; }
-    75% { color: black; }
+    0% { color: #E2E8F0; }
+    75% { color: #E2E8F0; }
     80% { color: #001f3f; }
     90% { color: #001f3f; }
-    95% { color: black; }
-    100% { color: black; }
+    95% { color: #E2E8F0; }
+    100% { color: #E2E8F0; }
 }
 
 @keyframes oddLetters {
-    0% { color: black; }
-    75% { color: black; }
+    0% { color: #E2E8F0; }
+    75% { color: #E2E8F0; }
     80% { color: #7fdbff; }
     90% { color: #7fdbff; }
-    95% { color: black; }
-    100% { color: black; }
+    95% { color: #E2E8F0; }
+    100% { color: #E2E8F0; }
 }
 
 .home-contacts a {
     text-decoration: none;
-    color: black;
+    color: #E2E8F0;
 }
 
 .home-contacts a:visited {
-    color: black;
+    color: #E2E8F0;
 }
 
 .home-contacts a:hover {
