@@ -45,7 +45,7 @@ const Resume = () => (
       <SectionColumn title="Studier">
         <ResumeItem title="Nackademin">
             <p>Javautvecklare • Distans</p>
-            <p>Augusti 2022 - Present</p>
+            <p>Augusti 2023 - Maj 2025</p>
         </ResumeItem>
         <ResumeItem title="Linköpings universitet">
             <p>Civilekonomprogrammet • Linköping</p>
